@@ -1,0 +1,18 @@
+export const Day = {
+		0:'Chủ Nhật',
+		1: 'Thứ Hai',
+		2: 'Thứ Ba',
+		3: 'Thứ Tư',
+		4: 'Thứ Năm',
+		5: 'Thứ Sáu',
+		6: 'Thứ Bảy',
+		7: 'Chủ Nhật',
+		8: 'Thứ Hai',
+		9: 'Thứ Ba',
+		10: 'Thứ Tư',
+		11: 'Thứ Năm',
+		12: 'Thứ Sáu',
+		13: 'Thứ Bảy',
+		14:'Chủ Nhật',
+		15: 'Thứ Hai',
+};
