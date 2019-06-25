@@ -101,13 +101,13 @@ const Weather = ({
 				</View>
 
 				<View>
-					<View style={styles.menuBottom}>
+					<View style={styles.titleBottom}>
 						<Text style={styles.titlemenu}>Dự báo 5 ngày</Text>
 					</View>
 					<View style={styles.menuBottom}>
 						<Text style={styles.text}>Hôm Nay-{we1}</Text>
 						<View style={{ flexDirection: 'row' }}>
-							<Text style={{ fontSize: 15, color: 'white' ,marginLeft:83}}>
+							<Text style={{ fontSize: 15, color: 'white' }}>
 								{((5 / 9) * (temp1min - 32)).toFixed()} / {((5 / 9) * (temp1max - 32)).toFixed()} ˚C
 							</Text>
 						</View>
@@ -126,7 +126,7 @@ const Weather = ({
 							{daily3}-{we3}
 						</Text>
 						<View style={{ flexDirection: 'row' }}>
-							<Text style={{ fontSize: 15, color: 'white' ,marginLeft:9}}>
+							<Text style={{ fontSize: 15, color: 'white' }}>
 								{((5 / 9) * (temp3min - 32)).toFixed()} / {((5 / 9) * (temp3max - 32)).toFixed()} ˚C
 							</Text>
 						</View>
@@ -146,7 +146,7 @@ const Weather = ({
 							{daily5}-{we5}
 						</Text>
 						<View style={{ flexDirection: 'row' }}>
-							<Text style={{ fontSize: 15, color: 'white' ,marginLeft:108}}>
+							<Text style={{ fontSize: 15, color: 'white' }}>
 								{((5 / 9) * (temp5min - 32)).toFixed()}/ {((5 / 9) * (temp5max - 32)).toFixed()} ˚C
 							</Text>
 						</View>
@@ -214,6 +214,15 @@ const styles = StyleSheet.create({
 		borderColor: 'white',
 		backgroundColor: 'rgba(0, 0, 0, 0.1)',
 	},
+	titleBottom: {
+		flex: 1,
+		flexDirection: 'row',
+		justifyContent: 'space-evenly',
+		borderRadius: 4,
+		borderWidth: 0.5,
+		borderColor: 'white',
+		backgroundColor: 'rgba(0, 0, 0, 0.1)',
+	},
 	menu1: {
 		fontSize: 14,
 		color: 'red',
@@ -259,6 +268,7 @@ const styles = StyleSheet.create({
 	text:{
 		color: 'white',
 		paddingBottom: 10,
+		textAlign: 'right'
 	},
 	cm3:{
 		marginTop:10,
