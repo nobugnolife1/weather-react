@@ -87,7 +87,7 @@ export default class App extends React.Component {
 		)
 			.then(res => res.json())
 			.then(json => {
-				console.log(json.DailyForecasts);
+				// console.log(json.DailyForecasts);
 				
 				if (hours >= 4 && hours <= 17) {
 					this.setState({
