@@ -52,13 +52,13 @@ const Weather = ({
 					<Text style={styles.subtitle}>{}</Text>
 				</View>
 				<View style={styles.bodyContainer}>
-					<Text style={styles.titlemenu}>Chi tiết</Text>
+					<Text style={styles.titlemenu}>Detail</Text>
 				</View>
 				<View style={styles.bodyContainer1}>
 					<View>
 						<View style={styles.boxleft}>
 							<View style={styles.cm1}>
-								<Text style={styles.menu1}>Áp suất:</Text>
+								<Text style={styles.menu1}>Pressure:</Text>
 								<Text style={styles.menu2}>{pressure}mb</Text>
 							</View>
 							<View>
@@ -68,7 +68,7 @@ const Weather = ({
 
 						<View style={styles.boxleft}>
 						<View style={styles.cm2}>
-								<Text style={styles.menu1}>Độ ẩm:</Text>
+								<Text style={styles.menu1}>Humidity:</Text>
 								<Text style={styles.menu2}>{humidity}%</Text>
 							</View>
 							<View>
@@ -80,7 +80,7 @@ const Weather = ({
 					<View>
 						<View style={styles.boxright}>
 						<View style={styles.cm3}>
-								<Text style={styles.menu1}>Tốc gió:</Text>
+								<Text style={styles.menu1}>Wind speed:</Text>
 								<Text style={styles.menu2}>{(speed * 3.6).toPrecision(3)}km/h</Text>
 							</View>
 							<View>
@@ -90,7 +90,7 @@ const Weather = ({
 
 						<View style={styles.boxright}>
 						<View style={styles.cm4}>
-								<Text style={styles.menu1}>Tầm nhìn:</Text>
+								<Text style={styles.menu1}>Vision:</Text>
 								<Text style={styles.menu2}>{(visibility / 1000).toPrecision(3)}km</Text>
 							</View>
 							<View>
@@ -102,10 +102,10 @@ const Weather = ({
 
 				<View>
 					<View style={styles.titleBottom}>
-						<Text style={styles.titlemenu}>Dự báo 5 ngày</Text>
+						<Text style={styles.titlemenu}>5-Day forecast</Text>
 					</View>
 					<View style={styles.menuBottom}>
-						<Text style={styles.text}>Hôm Nay-{we1}</Text>
+						<Text style={styles.text}>Today-{we1}</Text>
 						<View style={{ flexDirection: 'row' }}>
 							<Text style={{ fontSize: 15, color: 'white' }}>
 								{((5 / 9) * (temp1min - 32)).toFixed()} / {((5 / 9) * (temp1max - 32)).toFixed()} ˚C
@@ -113,7 +113,7 @@ const Weather = ({
 						</View>
 					</View>
 					<View style={styles.menuBottom}>
-						<Text style={styles.text}>Ngày Mai-{we2}</Text>
+						<Text style={styles.text}>Tomorrow-{we2}</Text>
 						<View style={{ flexDirection: 'row' }}>
 
 							<Text style={{ fontSize: 15, color: 'white' }}>

@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "finals",
-    "slug": "finals",
+    "name": "ssMyapp",
+    "slug": "ssMyapp",
     "privacy": "public",
     "sdkVersion": "33.0.0",
     "platforms": [
@@ -23,9 +23,9 @@
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
-    },
+    // "ios": {
+    //   "supportsTablet": true
+    // }
     "ios": {
       "bundleIdentifier": "com.yourcompany.yourappname"
     },
